@@ -1,0 +1,13 @@
+'''
+Without using the built-in len() function, write a function list_length() that takes in a list lst as a parameter and returns the length of the list.
+'''
+def list_length(lst):
+    count= 0
+    for num in lst:
+        count += 1
+    return count
+
+#Testing
+lst = [2,4,6,8,10]
+length = list_length(lst)
+print(length)
