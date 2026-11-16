@@ -1,0 +1,15 @@
+'''
+Write a function above_threshold() that takes in a list of integers lst and an integer threshold as parameters. The function should iterate through the original list and return a new list containing only numbers that are greater than threshold.
+'''
+def above_threshold(lst, threshold):
+    result=[]
+    for num in lst:
+      if num > threshold:
+        result.append(num) 
+    return result
+    pass
+
+#Testing
+lst = [8,2,13,11,4,10,14]
+result = above_threshold(lst, 10)
+print(result)
